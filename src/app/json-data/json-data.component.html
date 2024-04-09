@@ -1,0 +1,27 @@
+<p>json-data works!</p>
+<table border="2" align="center" bgcolor="gold" >
+    <tr>
+        <th>Sno</th>
+        <th>Name</th>
+        <th>Technology</th>
+        <th>city</th>
+    </tr>
+    <tr *ngFor="let d of data; let i=index">
+        <td>{{i+1}}</td>
+        <!-- <td>{{d.sno}}</td> -->
+        <td>{{d.name}}</td>
+        <td>{{d.technology}}</td>
+        <td>{{d.city}}</td>
+        
+    </tr>
+    <!-- <tr *ngFor="let d of dataTwo">
+        
+        <div *ngIf="d.isAtive && d.isApprove">
+            <img [src]="d.image">
+        </div>
+
+    </tr> -->
+    
+</table>
+
+<button class="btn btn-success" (click)="abc()">please click here</button>

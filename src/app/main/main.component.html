@@ -1,0 +1,11 @@
+<p>main works!</p>
+
+<div *ngFor="let n of newsData" class="alert  alert-info" id="news">
+    <h1>{{n.author}}</h1>
+    <h2>{{n.title}}</h2>
+    <p>{{n.description}}</p>
+    <img [src]="n.urlToImage" height="200px" width="200px">
+</div>
+
+
+

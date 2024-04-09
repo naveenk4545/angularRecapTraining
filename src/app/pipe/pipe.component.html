@@ -1,0 +1,23 @@
+<p>pipe works!</p>
+<div>
+    <h1>{{title |uppercase }}</h1>
+    <h1 class="alert  alert-info">live date</h1>
+        <p>{{todayDate | date:'d/m/y'}}</p>
+
+        <h1>short time</h1>
+        <p>{{todayDate | date:'shortTime'}}</p>
+        <h1>currency pipe</h1>
+        <h2>{{1289 | currency :'USD'}}</h2>
+        <h2>{{1289 | currency :'INR'}}</h2>
+
+        <h1>json val</h1>
+        <p>{{jsonVal | json }}</p>
+        <h2>percent pipe</h2>
+        <p>{{00.86 | percent}}</p>
+
+</div>
+<div class="alert alert-success">
+    <p>custom pipes</p>
+    {{original}}
+    <p>{{original | double}}</p>
+</div>

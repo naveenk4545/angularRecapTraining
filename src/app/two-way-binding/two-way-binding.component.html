@@ -1,0 +1,18 @@
+<p>two-way-binding works!</p>
+<input type="text" placeholder="Enter anything"[(ngModel)] ="smart"/>
+<p>{{smart}}</p>
+
+<div>
+    <p *ngIf="!display">welcome All</p>
+    <p>Hello</p>
+    <p *ngIf="!display">welcome All</p>
+    <p>Hello</p>
+</div>
+
+<div [ngSwitch]>="myVar">
+    <p ></p>
+    <div *ngSwitchCase="'one'">First case</div>
+  <div *ngSwitchCase="'two'">Second case</div>
+  <div *ngSwitchCase="'three'">Third case</div>
+  <div *ngSwitchDefault>Default case</div>
+</div>
